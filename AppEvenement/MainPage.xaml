@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:AppEvenement"
+             x:Class="AppEvenement.MainPage">
+    <StackLayout
+    Orientation="Vertical"
+    HorizontalOptions="Center"
+    VerticalOptions="End">
+        <Label Text="OdOO"
+               FontSize="20"
+               TextColor="White"
+               />
+        <Label Text="Odoo Experience"
+      
+                TextColor="White"
+               />
+        <Button
+              Text="Let's Explore"
+           VerticalOptions="Center" 
+           HorizontalOptions="Center"
+            Clicked="Button_Clicked"
+            />
+    </StackLayout>
+
+</ContentPage>

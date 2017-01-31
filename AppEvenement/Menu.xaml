@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppEvenement.Menu">
+    <MasterDetailPage.Master>
+        <ContentPage Title="Menu">
+            <StackLayout Orientation="Vertical">
+                <Label Text=""/>
+                <Button Text="get soccer fields" Clicked="AllerL"/>
+
+                <Button Text="Add soccer field" Clicked="AllerA" />
+                <Button Text="reserver soccer field" Clicked="AllerR"/>
+              
+            </StackLayout>
+        </ContentPage>
+    </MasterDetailPage.Master>
+</MasterDetailPage>
