@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppEvenement.Day1"
-             Title="Day 1"
+             Title="المحيط"
        
              >
 
@@ -11,12 +11,11 @@
               >
         <ListView.ItemTemplate>
             <DataTemplate>
-                <ViewCell>
-                    <StackLayout Orientation="Vertical" Padding="10,20,10,20">
-                        <Label Text="{Binding Titre}"/>
-                        <Label Text="{Binding Description}"/>
-                        <Label Text="{Binding Debut}"/>
-                        <Label Text="{Binding Fin}"/>
+                <ViewCell >
+                    <StackLayout Orientation="Vertical"  >
+                        <Label Text="{Binding Title} " HorizontalTextAlignment="End"/>
+                        <Image x:Name="a"  Source="{Binding ImageUrl}"/>
+                        <Label Text="{Binding Date} " HorizontalTextAlignment="End"/>
                     </StackLayout>
                 </ViewCell>
             </DataTemplate>

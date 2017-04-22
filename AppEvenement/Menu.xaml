@@ -1,17 +1,72 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AppEvenement.Menu">
-    <MasterDetailPage.Master>
-        <ContentPage Title="Menu">
-            <StackLayout Orientation="Vertical">
-                <Label Text=""/>
-                <Button Text="get soccer fields" Clicked="AllerL"/>
+             x:Class="AppEvenement.Menu" 
+                  >
+    <MasterDetailPage.Master  >
+      
+        <ContentPage Title="Menu" BackgroundColor="White" >
+            <ContentPage.ToolbarItems>
 
-                <Button Text="Add soccer field" Clicked="AllerA" />
-                <Button Text="reserver soccer field" Clicked="AllerR"/>
+                <ToolbarItem Text="تحديث"  Order="Secondary"  Clicked="ToolbarItem_Clicked"  />
+
+                <ToolbarItem Text="اشترك" x:Name="ss"  Clicked="ToolbarItem_Clicked2"  />
+
+
+
+            </ContentPage.ToolbarItems>
+            <ScrollView>
+                <StackLayout Orientation="Vertical" HorizontalOptions="End" >
               
+                    <!--  <BoxView BackgroundColor="#349a95" HeightRequest="150" >
+
+                </BoxView>
+                -->
+                <Image Source="imagemenu.png"  HeightRequest="200"/>
+                
+                   
+
+                <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="End">
+                 <ListView x:Name="listView" HorizontalOptions="End">
+                        <ListView.ItemTemplate>
+                            <DataTemplate >
+
+                               <!-- <ImageCell Text="{Binding Title}" ImageSource="{Binding IconSource}" Tapped="ImageCell_Tapped"   />
+-->
+
+                                    <ViewCell>
+                                      
+                                            <StackLayout Orientation="Horizontal" HorizontalOptions="End">
+
+                                            <Label Text="{Binding Title}" FontSize="20"
+                                 />
+                                            <Image Source="{Binding IconSource}" />
+
+
+
+                                        </StackLayout>
+                                    </ViewCell>
+
+                                </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                   
+                        <!--    <StackLayout Orientation="Horizontal">
+                        <Label Text="aaaaa"/>
+                            <Image Source="ic_email_3x.png"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal">
+                            <Button BackgroundColor="White" BorderColor="White"  WidthRequest="200" Text="aaaaa" FontSize="22" VerticalOptions="Center"/>
+                            <Image Source="ic_email_3x.png"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="aaaaa"/>
+                            <Image Source="ic_email_3x.png"/>
+                        </StackLayout>
+ --></StackLayout>
+                
             </StackLayout>
+            </ScrollView>
         </ContentPage>
     </MasterDetailPage.Master>
 </MasterDetailPage>

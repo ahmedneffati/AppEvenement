@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppEvenement.Inscription"
+             Title="إنشاء حساب"
+		>
+    <ScrollView>
+        <StackLayout Orientation="Vertical"
+                 Spacing="18"
+                    Margin="20"
+                     >
+
+
+            <Entry  Placeholder="(email)كلمة العبور" x:Name="email" HorizontalTextAlignment="End"/>
+
+            <Entry   IsPassword="true" Placeholder="الرقم السري" x:Name="pass" HorizontalTextAlignment="End"/>
+
+
+
+
+
+
+
+            <Button Text="إنشاء" 
+                    x:Name="creer"
+                      BackgroundColor="#013ADF"
+                    TextColor="White"
+                    Clicked="creer_Clicked"
+                    
+                />
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

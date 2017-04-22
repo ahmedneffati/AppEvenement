@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppEvenement.DetailTache">
+    <StackLayout Orientation="Vertical">
+        <Image x:Name="a" />
+        <Label x:Name="title"/>
+        <Label x:Name="desc"/>
+        <Label x:Name="deb"/>
+        <Label x:Name="fin"/>
+        <Button Text="الدهاب الى الخريطة"      BackgroundColor="#013ADF" x:Name="aa"></Button>
+        
+    </StackLayout>
+</ContentPage>

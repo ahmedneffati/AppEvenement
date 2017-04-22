@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppEvenement.Add"
+              Title="اضافة "
+             >
+
+    <ScrollView>
+        <StackLayout Orientation="Vertical"
+                Padding="20"
+                  HorizontalOptions="Center"
+                     VerticalOptions="Center"
+                     >
+            <Entry Text="" Placeholder="العنوان" x:Name="nom" HorizontalTextAlignment="End" />
+
+            <Entry   Text="" Placeholder="النوع" x:Name="desc" HorizontalTextAlignment="End"/>
+
+            <StackLayout 
+                         HorizontalOptions="Center"
+                         >
+                <!--<Button Text="Get Position from Maps" 
+                    BackgroundColor="Gray"
+                    
+                    
+                    TextColor="White"
+                x:Name="pos1"/>
+            <Button Text="Get Position from GPS" 
+                    BackgroundColor="Gray"
+                
+                    
+                    TextColor="White"
+                x:Name="pos" />
+                -->
+                <Image Source="add_btn.png"
+                       x:Name="x"
+                       WidthRequest="400"
+                       HeightRequest="220"
+                       >
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer
+                            Tapped="TapGestureRecognizer_Tapped"
+                            NumberOfTapsRequired="1"
+                            />
+                    </Image.GestureRecognizers>
+                </Image>
+                <Button Text="اضافة" 
+                    BackgroundColor="#013ADF"
+                    TextColor="White"
+               />
+            </StackLayout>
+           
+
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage> 

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppEvenement.son"
+             Title="تغيير اللاقط">
+    <StackLayout Orientation="Vertical">
+    <Image x:Name="a" Source="http://agi-son.org/files/thumbnails/sensibilisation-et-prevention-image-home.png" />
+
+    <Button Text="تغيير"/>
+    </StackLayout>
+</ContentPage>

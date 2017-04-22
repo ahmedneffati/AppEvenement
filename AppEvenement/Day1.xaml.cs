@@ -20,16 +20,23 @@ namespace AppEvenement
         }
         public async void getTaches()
         {
-           var tachS = new TacheServices();
-           var Taches = new List<Tache>();
+            try { 
+           var tachS = new PostServices();
+           var Taches = new List<Post>();
             Taches = await  tachS.getTachesOfDayAsync(1);
             list.ItemsSource = Taches;
-          /*  foreach(var Tache in Taches)
+            list.ItemTapped += async (sender, args) =>
             {
-                var t = Tache;
+                var item = args.Item as Post;
+                if (item == null) return;
+                await Navigation.PushAsync(new DetailTache(item));
+                list.SelectedItem = null;
+            };
             }
-            */
-
+            catch (Exception)
+            {
+                await DisplayAlert("خطا", "شغل الانترنات", "Ok");
+            }
         }
     }
 }

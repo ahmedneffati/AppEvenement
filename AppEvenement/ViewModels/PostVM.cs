@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 
 namespace AppEvenement.ViewModels
 {
-    class TacheVM
+    class PostVM
     {
-        TacheServices u = new TacheServices();
-        private List<Models.Tache> _TachesList;
-        public List<Models.Tache> TachesList
+        PostServices u = new PostServices();
+        private List<Models.Post> _TachesList;
+        public List<Models.Post> TachesList
         {
             get
             {
@@ -20,17 +20,17 @@ namespace AppEvenement.ViewModels
             set
             {
                 _TachesList = value;
-                
+
             }
         }
-        public TacheVM()
+        public PostVM()
         {
             getdata();
-            
+
         }
         public async void getdata()
         {
-            var tachS = new TacheServices();
+            var tachS = new PostServices();
             TachesList = await tachS.getTachesOfDayAsync(1);
         }
     }

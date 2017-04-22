@@ -8,10 +8,10 @@ using System.Threading.Tasks;
 
 namespace AppEvenement.Services
 {
-    class AdminServices
+    class RateServices
     {
-        RestClient<Admin> restClient = new RestClient<Admin>("http://takwira.azurewebsites.net/api/Admins/");
-        public async Task<List<Admin>> getAdminsAsync()
+        RestClient<Rate> restClient = new RestClient<Rate>("http://fdhiha.azurewebsites.net/Admins/");
+        public async Task<List<Rate>> getAdminsAsync()
         {
 
 
@@ -21,14 +21,14 @@ namespace AppEvenement.Services
         }
 
 
-        public async Task PostAdminsAsync(Admin e)
+        public async Task PostAdminsAsync(Rate e)
         {
 
             var Admins = await restClient.PostAsync(e);
 
 
         }
-        public async Task PutAdminsAsync(int id, Admin e)
+        public async Task PutAdminsAsync(int id, Rate e)
         {
 
             var Admins = await restClient.PutAsync(id, e);

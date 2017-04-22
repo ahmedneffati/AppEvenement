@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppEvenement.Connection"
+              Title="تسجيل الدخول"
+             
+             
+             >
+    <ScrollView>
+        <StackLayout Orientation="Vertical"
+                  
+                    
+                 >
+           
+            <Label/>
+            <Label/>
+            <Label/>
+            <Label Text="مرحبا بك في اختراقات" FontSize="25" TextColor="Black" HorizontalOptions="CenterAndExpand"/>
+
+            <StackLayout HorizontalOptions="CenterAndExpand"
+                         VerticalOptions="CenterAndExpand" WidthRequest="200"
+                             Margin="30"
+                             >
+
+
+                <Entry x:Name="email" Placeholder="كلمة العبور" WidthRequest="200" HorizontalTextAlignment="End" />
+
+                <Entry  x:Name="pass" Placeholder="الرقم السري" IsPassword="True" WidthRequest="200" HorizontalTextAlignment="End"/>
+                <Button Text="تسجيل الدخول" 
+                      BackgroundColor="#013ADF"
+                        TextColor="White"
+                    Clicked="Button_ClickedAsync"
+                       
+                    />
+                <Button Text="اضافة حساب" 
+                        Clicked="Button_ClickedAsync2"  
+                    
+                    BackgroundColor="White" 
+                    />
+                <Button Text="استعادة حسابك" HorizontalOptions="Center"
+                       TextColor="Blue"
+                       Clicked="ButtRec"
+					/>
+
+            </StackLayout>
+
+
+            <!-- Command="{Binding PostCommand}"/> -->
+
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>
